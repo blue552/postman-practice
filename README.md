@@ -10,7 +10,7 @@ Bài thực hành sử dụng công cụ Postman để kiểm thử API.
 - Sử dụng Environment Variables trong Postman
 
 ## Hình ảnh minh họa
-*(Thêm ảnh chụp màn hình request, response nếu có)*
+![alt text](image.png)
 
 ## Học được gì?
 - Hiểu rõ cách hoạt động của HTTP methods
