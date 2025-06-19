@@ -45,18 +45,6 @@ Bài thực hành sử dụng công cụ Postman để kiểm thử các phươn
 GET https://reqres.in/api/users?page=2
 ```
 
-**✅ Test Scripts:**
-```javascript
-pm.test("Status code is 200", function () {
-    pm.response.to.have.status(200);
-});
-
-pm.test("Response has data array", function () {
-    var jsonData = pm.response.json();
-    pm.expect(jsonData.data).to.be.an('array');
-});
-```
-
 <div align="center">
 <img src="./image-5.png" alt="GET request" width="800"/>
 </div>
@@ -88,18 +76,6 @@ pm.test("Response has data array", function () {
 }
 ```
 
-**✅ Test Scripts:**
-```javascript
-pm.test("Status code is 400", function () {
-    pm.response.to.have.status(400);
-});
-
-pm.test("Error message for missing password", function () {
-    var jsonData = pm.response.json();
-    pm.expect(jsonData.error).to.eql("Missing password");
-});
-```
-
 <div align="center">
 <img src="./image-7.png" alt="POST test case" width="800"/>
 </div>
@@ -125,24 +101,6 @@ pm.test("Error message for missing password", function () {
 }
 ```
 
-**✅ Test Scripts:**
-```javascript
-pm.test("Status code is 200", function () {
-    pm.response.to.have.status(200);
-});
-
-pm.test("Response contains updated data", function () {
-    var jsonData = pm.response.json();
-    pm.expect(jsonData.name).to.eql("Baonguyen");
-    pm.expect(jsonData.job).to.eql("Tester");
-});
-
-pm.test("Response has updatedAt field", function () {
-    var jsonData = pm.response.json();
-    pm.expect(jsonData.updatedAt).to.exist;
-});
-```
-
 <div align="center">
 <img src="./image-6.png" alt="PUT request" width="800"/>
 </div>
@@ -159,21 +117,6 @@ pm.test("Response has updatedAt field", function () {
 - **Headers:** `Content-Type: application/json`
 - **Mục đích:** Xóa user có ID = 2 khỏi hệ thống
 - **Kết quả mong đợi:** Status `204 No Content` (xóa thành công, không có body response)
-
-**✅ Test Scripts:**
-```javascript
-pm.test("Status code is 204", function () {
-    pm.response.to.have.status(204);
-});
-
-pm.test("Response body is empty", function () {
-    pm.expect(pm.response.text()).to.be.empty;
-});
-
-pm.test("Response time is less than 2000ms", function () {
-    pm.expect(pm.response.responseTime).to.be.below(2000);
-});
-```
 
 <div align="center">
 <img src="./image-8.png" alt="DELETE request" width="800"/>
