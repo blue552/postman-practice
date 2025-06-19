@@ -38,7 +38,9 @@ Gửi `GET` tới danh sách người dùng:
 GET https://reqres.in/api/users?page=2
 ```
 
-![GET request](image-5.png)
+<div align="center">
+<img src="./image-5.png" alt="GET request" width="800"/>
+</div>
 
 ---
 
@@ -58,7 +60,9 @@ GET https://reqres.in/api/users?page=2
 }
 ```
 
-![POST test case](image-7.png)
+<div align="center">
+<img src="./image-7.png" alt="POST test case" width="800"/>
+</div>
 
 ---
 
@@ -74,7 +78,9 @@ GET https://reqres.in/api/users?page=2
 ```
 - **Yêu cầu API key nếu cần.**
 
-![PUT request](image-6.png)
+<div align="center">
+<img src="./image-6.png" alt="PUT request" width="800"/>
+</div>
 
 ---
 
@@ -83,7 +89,9 @@ GET https://reqres.in/api/users?page=2
 - **Base URL:** `https://reqres.in/api/users/2`
 - **Phản hồi mong đợi:** `204 No Content`
 
-![DELETE request](image-8.png)
+<div align="center">
+<img src="./image-8.png" alt="DELETE request" width="800"/>
+</div>
 
 ---
 
@@ -99,6 +107,6 @@ GET https://reqres.in/api/users?page=2
 
 ## 📚 Tài liệu tham khảo
 
-- [https://www.postman.com/](https://www.postman.com/)
-- [https://learning.postman.com/](https://learning.postman.com/)
-- [https://reqres.in/](https://reqres.in/)
+- [Postman Official Website](https://www.postman.com/)
+- [Postman Learning Center](https://learning.postman.com/)
+- [ReqRes - Test API](https://reqres.in/)
